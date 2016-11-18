@@ -1,0 +1,70 @@
+/******* index.ejs *******/
+.container {
+  text-align: center;
+}
+.blog_posts_title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+.create_button {
+  padding: 10 12;
+  margin: 10px;
+  color: white;
+  background: green;
+}
+.posts_container {
+  margin-left: 30%;
+  margin-top: 50px;
+}
+.post {
+  margin-top: 30px;
+}
+.post_info {
+  display: flex;
+}
+.post_buttons {
+  display: flex;
+}
+.post_title {
+  font-size: 30px;
+  color: blue;
+}
+.post_author {
+
+}
+.post_message {
+  color: gray;
+  padding-left: 20px;
+}
+.button {
+  padding: 5 8;
+  margin: 10 10 0 0;
+  background: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+.delete {
+  margin-bottom: 0 !important;
+}
+a {
+  text-decoration: none;
+}
+td {
+  padding: 5 0;
+}
+
+/******* show.ejs *******/
+.show_author {
+  font-size: 20px;
+}
+.show_message {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+/******* new.ejs *******/
+.text_field {
+  margin-top: 30px;
+}

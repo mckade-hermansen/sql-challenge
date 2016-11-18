@@ -1,0 +1,26 @@
+<head>
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+      <h1 class="blog_posts_title"> Blog Posts </h1>
+      <a class="create_button" href="/posts/views/new"> Create New Post </a>
+    </div>
+      <div class="posts_container">
+        <% data.forEach(function(post){ %>
+        <div class="post">
+          <a href='/posts/<%= post.id %>' class="post_title"><%= post.title %></a>
+          <div class="post_info">
+            <p class="post_author"> By <%= post.author %></p>
+            <p class="post_message"><%= post.message %></p>
+          </div>
+          <div class="post_buttons">
+            <a class="button" href='/posts/<%= post.id %>'> View </a>
+            <a class="button" href='/posts/<%= post.id %>/edit'> Edit </a>
+            <form class="delete" action="/posts/<%= post.id %>/delete" method="post"><input class="button" id="submit_button" type="submit" value="Delete" /></form>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+  </body>

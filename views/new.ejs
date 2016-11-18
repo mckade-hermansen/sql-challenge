@@ -1,0 +1,23 @@
+<head>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Create Post</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="new_title"> Create New Post </h1>
+    <form action="/posts/new" method="post">
+      <div class="text_field">
+        Title <input type="text" class="post_input" name="title" placeholder="Blog Title" />
+      </div>
+      <div class="text_field">
+        Author <input type="text" name="author" placeholder="Blog Author" />
+      </div>
+      <div class="text_field">
+        Message <input type="text" class="text_area" name="message" placeholder="Blog Message" />
+      </div>
+      <div class="text_field">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+<body>
